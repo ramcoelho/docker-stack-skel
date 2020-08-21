@@ -1,0 +1,9 @@
+# Gerando multiplos domínios em um único certificado
+
+docker run --rm -v '/var/projetos/asset/letsencrypt:/etc/letsencrypt' -v '/var/projetos/proxy/le-challenge-root:/webroot' certbot/certbot certonly --agree-tos -m "seuemail@server.com" --webroot --webroot-path="/webroot" -d "app1.dominio.com" -d "app2.dominio.com"
+
+# Acrescentando mais domínios em um certificado existente
+
+docker run --rm -v '/var/projetos/asset/letsencrypt:/etc/letsencrypt' -v '/var/projetos/proxy/le-challenge-root:/webroot' certbot/certbot certonly --agree-tos -m "seuemail@server.com" --webroot --webroot-path="/webroot" -d "app1.dominio.com" -d "app2.dominio.com" -d "app3.dominio.com" --expand
+
+

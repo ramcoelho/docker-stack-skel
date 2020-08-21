@@ -1,0 +1,8 @@
+#!/bin/bash
+
+opwd=`pwd`
+cd /var/projetos
+docker run --rm -v '/var/projetos/asset/letsencrypt:/etc/letsencrypt' -v '/var/projetos/proxy/le-challenge-root:/webroot' certbot/certbot renew
+docker-compose restart proxy
+cd $opwd
+

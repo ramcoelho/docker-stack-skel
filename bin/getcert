@@ -1,0 +1,6 @@
+#!/bin/bash
+
+email='seuemail@server.com'
+
+docker run --rm -v '/var/projetos/asset/letsencrypt:/etc/letsencrypt' -v '/var/projetos/proxy/le-challenge-root:/webroot' certbot/certbot certonly --agree-tos -m "$email" --webroot --webroot-path="/webroot" -d "$1"
+
