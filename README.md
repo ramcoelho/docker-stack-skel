@@ -6,6 +6,7 @@ This is a simple docker stack skeleton.
 
 You can always buy me a beer:
 
-Nano: 3qgptzxrymheo1pfyf5wj7nh94a5asn5biodo7mzc778hrou736ika1sqbic
-Decred: DsVqwGs1JFPiASacnFoksYsy1iemWt86eqo
-Dash: Xu1MCd8Lj6EFZAHd3qGdfNQRoWFoJ7PiJd
+* *Nano*: 3qgptzxrymheo1pfyf5wj7nh94a5asn5biodo7mzc778hrou736ika1sqbic
+* *Decred*: DsVqwGs1JFPiASacnFoksYsy1iemWt86eqo
+* *Dash*: Xu1MCd8Lj6EFZAHd3qGdfNQRoWFoJ7PiJd
+
