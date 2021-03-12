@@ -1,3 +1,3 @@
 #!/bin/bash
-openssl dhparam -out /var/projetos/asset/letsencrypt/dhparam.pem 2048
+openssl dhparam -out dhparam.pem 2048
 
