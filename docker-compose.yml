@@ -17,7 +17,7 @@ services:
               protocol: tcp
               mode: host
     proxy:
-        image: 'nginx:1.19.2-alpine'
+        image: 'nginx:1.19.8-alpine'
         container_name: 'proxy'
         restart: unless-stopped
         ports:
@@ -32,7 +32,7 @@ services:
             - './proxy/le-challenge-root:/var/www'
             - './asset/letsencrypt:/etc/letsencrypt'              
     php:
-        image: 'php:7.4.9-fpm-alpine'
+        image: 'nexy/php-fpm:8.0.3'
         container_name: 'php'
         restart: unless-stopped
         volumes:
@@ -40,7 +40,7 @@ services:
             - './servicos/app2/webroot/:/var/www/webroot/app2'
             - './php/php.ini:/usr/local/etc/php/php.ini'
     app1:
-        image: 'nginx:1.19.2-alpine'
+        image: 'nginx:1.19.8-alpine'
         container_name: 'app1'
         restart: unless-stopped
         volumes:
